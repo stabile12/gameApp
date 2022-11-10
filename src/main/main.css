@@ -1,0 +1,10 @@
+.container-main {
+  background: white;
+  width: 80vw;
+  height: 50vh;
+  border-radius: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}

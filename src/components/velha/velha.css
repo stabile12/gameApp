@@ -1,0 +1,26 @@
+* {
+  border: none
+}
+
+table {
+  height: 50%;
+  width: 50%;
+  background: white;
+}
+
+
+td {
+  width: 33.33%;
+  margin-left: 10px;
+  background: rgb(214, 218, 239);
+  
+}
+.space {
+  height: 90%;
+  width: 90%;
+  background: rgb(52, 33, 255);
+  margin-left: 5%;
+  font-size: 1.5rem;
+}
+
+
