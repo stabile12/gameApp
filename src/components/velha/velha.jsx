@@ -2,7 +2,7 @@ import './velha.css'
 import React, { useState } from 'react'
 
 import { Button } from './sub/button'
-import { victory } from './sub/victoryFunc'
+
 
 export const Velha = () => {
   const [counter, setCounter] = useState(0)

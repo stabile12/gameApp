@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import { Main } from './main/main';
 import { Velha } from './components/velha/velha';
+import { Forca } from './components/forca/forca';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +14,7 @@ root.render(
       <Routes>
         <Route path={'/'} element={<Main />} />
         <Route path={'/velha'} element={<Velha/>} />
+        <Route path='/forca' element={<Forca/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
