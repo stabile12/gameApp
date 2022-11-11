@@ -22,7 +22,7 @@
   width: 50%;
   text-align: center;
   font-size: medium;
-  border-radius: 6%;
+  border-radius: 12px;
 }
 
 .main-button:hover {
