@@ -6,10 +6,10 @@ export const Main = () => {
   const [nome, setNome] = useState('')
   return (
     <div className='container-main'>
-      <p>Olá! Diga seu nome e escolha um jogo para começar!</p>
-      <input onChange={(e) => setNome(e.target.value)}></input>
-      <Link to={'/velha'}><button>Jogo da velha</button></Link>
-      <Link to={'/forca'}><button>Jogo da Forca</button></Link>
+      <p className='title'>Olá! Diga seu nome e escolha um jogo para começar!</p>
+      <input type="text" className="name-input" onChange={(e) => setNome(e.target.value)} />
+      <Link className='main-button' to={'/velha'}><button className='main-button' >Jogo da velha</button></Link>
+      <Link className='main-button' to={'/forca'}><button className='main-button'>Jogo da Forca</button></Link>
       
 
     </div>

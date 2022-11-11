@@ -44,9 +44,9 @@ export const Forca = () => {
     ) {
       console.log('ganhou');
       setDisabled(true)
-      setWin(true)
-      
+      setWin(true);
     }
+    if(!word) setDisabled(true);
     
   })
 
