@@ -7,7 +7,6 @@ export const Forca = () => {
   const [letter, setLetter] = useState('')
   const [value, setValue] = useState(letter)
   const [chances, setChances] = useState(10)
-  const input = useRef()
   const space = document.getElementsByClassName('letter')
   const [disabled, setDisabled] = useState(false)
   const [win, setWin] = useState(false)
@@ -64,7 +63,7 @@ export const Forca = () => {
     setLetter('')
     setValue('')
     
-    input.current.focus();
+    
     
   }
 
@@ -79,7 +78,7 @@ export const Forca = () => {
       </div>
       <p className='chances'>Chances: {chances}</p>
       {win? <p>Você ganhou!</p> : null}
-      <input ref={input} value={letter} disabled={letter.length >= 1?true:false || disabled} type="text" onChange={(e) => setLetter(e.target.value)}  />
+      <input className='forca-input'  value={letter} disabled={letter.length >= 1?true:false || disabled} type="text" onChange={(e) => setLetter(e.target.value)}  />
       <button disabled={disabled} className='forca-button' onClick={() => check()}>send</button>
       <button  className='forca-button' onClick={() => generate()}>generate</button>
       {word}
