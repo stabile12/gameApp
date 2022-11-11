@@ -78,7 +78,7 @@ export const Forca = () => {
       </div>
       <p className='chances'>Chances: {chances}</p>
       {win? <p>Você ganhou!</p> : null}
-      <input className='forca-input'  value={letter} disabled={letter.length >= 1?true:false || disabled} type="text" onChange={(e) => setLetter(e.target.value)}  />
+      <input autoCapitalize='none' className='forca-input'  value={letter} disabled={letter.length >= 1?true:false || disabled} type="text" onChange={(e) => setLetter(e.target.value)}  />
       <button disabled={disabled} className='forca-button' onClick={() => check()}>send</button>
       <button  className='forca-button' onClick={() => generate()}>generate</button>
       {word}
